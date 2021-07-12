@@ -9,6 +9,7 @@ public class WordSearchGameFactory {
     */
    public static WordSearchGame createGame() {
       // You must return an instance of your solution class here.
+      return new Sizzurch();
    }
 
 }
