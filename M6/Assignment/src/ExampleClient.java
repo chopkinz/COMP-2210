@@ -1,8 +1,6 @@
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.Arrays;
-import java.util.List;
 
 /**
  * ExampleClient.java
@@ -20,7 +18,7 @@ public class ExampleClient {
 
     /** Drives execution. */
     public static void main(String[] args) throws FileNotFoundException {
-        WordLadderGame doublets = new Doublets(new FileInputStream(new File("sowpods.txt")));
+        WordLadderGame doublets = new Doublets(new FileInputStream("sowpods.txt"));
 
         System.out.println(doublets.getHammingDistance("tiger", "tiger"));
         System.out.println(doublets.getHammingDistance("tiger", "eagle"));
