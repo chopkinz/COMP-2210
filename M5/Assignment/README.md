@@ -1,7 +1,8 @@
-Implementing Collections - LinkedSet
-Von Neumann Universe 4
+# Implementing Collections - LinkedSet
+
 
 Problem Overview
+---
 This assignment requires you to implement a set collection using a doubly-linked list as the underlying data structure. You are provided with the Set interface and a shell of the LinkedSet implementing class. You must not change anything in the Set interface, but you must create correct implementations of the methods in the LinkedSet class. In doing so you are allowed to add any number of private methods and nested classes that you need, but you may not create or use any other top-level class and you may not create any public method. You must also use without modification the existing fields of the LinkedSet class.
 
 The Set interface is generic and makes no restrictions on the type that it can contain. The LinkedSet class is also generic, but it does make a restriction on the type variable: Any type bound by a client to T must be a class that implements the Comparable interface for that type. Thus, there is a natural order on the values stored in an LinkedSet, but not (necessarily) on those stored in another class that implements the Set interface. This is an important distinction, so pause here long enough to make sure you understand this point.
@@ -9,22 +10,23 @@ The Set interface is generic and makes no restrictions on the type that it can c
 The following sections describe each method to be implemented, organized according to the methods appearing in the Set interface and those specific to the LinkedSet class. Each method’s behavior is described below and in comments in the provided source code. You must read both. Note that in addition to correctness, your code must meet the stated performance requirements.
 
 General Collection Methods of the Set Interface
+---
 These methods correspond to the general methods that would be supported by most any type of collection, but some have behavior specific to a set.
 
 add(T element)
 The add method ensures that this set contains the specified element. Neither duplicates nor null values are allowed. The method returns true if this set was modified (i.e., the element was added) and false otherwise. Note that the constraint on the generic type parameter T of the LinkedSet class ensures that there is a natural order on the values stored in an LinkedSet. You must maintain the internal doubly-linked list in ascending natural order at all times. The time complexity of the add method must be O(N), where N is the number of elements in the set.
 
 Note that one element being a duplicate of another means that the two elements are equal. Since duplicates are not allowed to be added to any implementing class of the Set interface, this is an example of why it’s important for the equals method and the compareTo method of a class to be consistent.
-
+---
 remove(T element)
 The remove method ensures that this set does not contain the specified element. The method returns true if this set was modified (i.e., an existing element was removed) and false otherwise. The remove method must maintain the ascending natural order of the doubly-linked list. The time complexity of the remove method must be O(N), where N is the number of elements in the set.
-
+---
 contains(T element)
 The contains method searches for the specified element in this set, returning true if the element is in this set and false otherwise. The time complexity of the contains method must be O(N), where N is the number of elements in the set.
-
+---
 size()
 The size method returns the number of elements in this set. This method is provided for you and must not be changed. The time complexity of the size method is O(1).
-
+---
 isEmpty()
 The isEmpty method returns true if there are no elements in this set and false otherwise. This method is provided for you and must not be changed. The time complexity of the isEmpty method is O(1). Any set for which isEmpty() returns true is considered the “empty set” (∅) for purposes of union, intersection, and complement described below.
 
