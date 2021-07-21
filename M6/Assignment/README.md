@@ -2,7 +2,7 @@
 
 Problem Overview
 ---
-In this assignment, you will implement a version of a word search game much like Boggle and other similar word games. The approach you take to finding words on the board will be a direct application of depth-first search with backtracking.
+In this assignment, you will implement a version of a word search game much like Boggle (https://commons.wikimedia.org/wiki/File:Boggle.jpg) and other similar word games. The approach you take to finding words on the board will be a direct application of depth-first search with backtracking.
 
 The version of the game that you will implement is played on a square board according to the following rules.
 
