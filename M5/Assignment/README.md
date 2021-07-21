@@ -18,19 +18,19 @@ add(T element)
 The add method ensures that this set contains the specified element. Neither duplicates nor null values are allowed. The method returns true if this set was modified (i.e., the element was added) and false otherwise. Note that the constraint on the generic type parameter T of the LinkedSet class ensures that there is a natural order on the values stored in an LinkedSet. You must maintain the internal doubly-linked list in ascending natural order at all times. The time complexity of the add method must be O(N), where N is the number of elements in the set.
 
 Note that one element being a duplicate of another means that the two elements are equal. Since duplicates are not allowed to be added to any implementing class of the Set interface, this is an example of why it’s important for the equals method and the compareTo method of a class to be consistent.
----
+
 remove(T element)
 ---
 The remove method ensures that this set does not contain the specified element. The method returns true if this set was modified (i.e., an existing element was removed) and false otherwise. The remove method must maintain the ascending natural order of the doubly-linked list. The time complexity of the remove method must be O(N), where N is the number of elements in the set.
----
+
 contains(T element)
 ---
 The contains method searches for the specified element in this set, returning true if the element is in this set and false otherwise. The time complexity of the contains method must be O(N), where N is the number of elements in the set.
----
+
 size()
 ---
 The size method returns the number of elements in this set. This method is provided for you and must not be changed. The time complexity of the size method is O(1).
----
+
 isEmpty()
 ---
 The isEmpty method returns true if there are no elements in this set and false otherwise. This method is provided for you and must not be changed. The time complexity of the isEmpty method is O(1). Any set for which isEmpty() returns true is considered the “empty set” (∅) for purposes of union, intersection, and complement described below.
