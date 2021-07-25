@@ -5,7 +5,7 @@ Problem Overview
 ---
 This assignment requires you to implement a set collection using a doubly-linked list as the underlying data structure. You are provided with the Set interface and a shell of the LinkedSet implementing class. You must not change anything in the Set interface, but you must create correct implementations of the methods in the LinkedSet class. In doing so you are allowed to add any number of private methods and nested classes that you need, but you may not create or use any other top-level class and you may not create any public method. You must also use without modification the existing fields of the LinkedSet class.
 
-The Set interface is generic and makes no restrictions on the type that it can contain. The LinkedSet class is also generic, but it does make a restriction on the type variable: Any type bound by a client to T must be a class that implements the Comparable interface for that type. Thus, there is a natural order on the values stored in an LinkedSet, but not (necessarily) on those stored in another class that implements the Set interface. This is an important distinction, so pause here long enough to make sure you understand this point.
+The Set interface is generic and makes no restrictions on the type that it can contain. The LinkedSet class is also generic, but it does make a restriction on the type variable: Any type bound by a client to T must be a class that implements the Comparable interface for that type. Thus, there is a natural order on the values stored in a LinkedSet, but not (necessarily) on those stored in another class that implements the Set interface. This is an important distinction, so pause here long enough to make sure you understand this point.
 
 The following sections describe each method to be implemented, organized according to the methods appearing in the Set interface and those specific to the LinkedSet class. Each method’s behavior is described below and in comments in the provided source code. You must read both. Note that in addition to correctness, your code must meet the stated performance requirements.
 
@@ -15,7 +15,7 @@ These methods correspond to the general methods that would be supported by most 
 
 add(T element)
 ---
-The add method ensures that this set contains the specified element. Neither duplicates nor null values are allowed. The method returns true if this set was modified (i.e., the element was added) and false otherwise. Note that the constraint on the generic type parameter T of the LinkedSet class ensures that there is a natural order on the values stored in an LinkedSet. You must maintain the internal doubly-linked list in ascending natural order at all times. The time complexity of the add method must be O(N), where N is the number of elements in the set.
+The add method ensures that this set contains the specified element. Neither duplicates nor null values are allowed. The method returns true if this set was modified (i.e., the element was added) and false otherwise. Note that the constraint on the generic type parameter T of the LinkedSet class ensures that there is a natural order on the values stored in a LinkedSet. You must maintain the internal doubly-linked list in ascending natural order at all times. The time complexity of the add method must be O(N), where N is the number of elements in the set.
 
 Note that one element being a duplicate of another means that the two elements are equal. Since duplicates are not allowed to be added to any implementing class of the Set interface, this is an example of why it’s important for the equals method and the compareTo method of a class to be consistent.
 
@@ -65,23 +65,23 @@ In addition to the methods from the Set interface, the LinkedSet class also impl
 
 Constructors
 ---  
-The only public constructor that is allowed has been provided for you and you must not change it in any way. You may, however, find it helpful to write your own private constructor; one that offers direct support for building an LinkedSet from an existing doubly-linked list. Such a constructor will be helpful but it is not required and will not be graded.
+The only public constructor that is allowed has been provided for you and you must not change it in any way. You may, however, find it helpful to write your own private constructor; one that offers direct support for building a LinkedSet from an existing doubly-linked list. Such a constructor will be helpful but it is not required and will not be graded.
 
 equals(LinkedSet<T> s)
 ---  
-The external behavior of this overloaded method is identical to the equals method from the Set interface described above. However, since the parameter is typed as an LinkedSet, this method can directly access the doubly-linked list in this set as well as in the parameter set. Having access to the underlying representation of both sets allows a more efficient algorithm for this method. The time complexity of this equals method must be O(N) where N is the size of this set.
+The external behavior of this overloaded method is identical to the equals method from the Set interface described above. However, since the parameter is typed as a LinkedSet, this method can directly access the doubly-linked list in this set as well as in the parameter set. Having access to the underlying representation of both sets allows a more efficient algorithm for this method. The time complexity of this equals method must be O(N) where N is the size of this set.
 
 union(LinkedSet<T> s)
 ---  
-The external behavior of this overloaded method is identical to the union method from the Set interface described above. However, since the parameter is typed as an LinkedSet, this method can directly access the doubly-linked list in this set as well as in the parameter set. Having access to the underlying representation of both sets allows a more efficient algorithm for this method. The time complexity of the union method must be O(N) where N is the size of the larger of the two sets involved.
+The external behavior of this overloaded method is identical to the union method from the Set interface described above. However, since the parameter is typed as a LinkedSet, this method can directly access the doubly-linked list in this set as well as in the parameter set. Having access to the underlying representation of both sets allows a more efficient algorithm for this method. The time complexity of the union method must be O(N) where N is the size of the larger of the two sets involved.
 
 intersection(LinkedSet<T> s)
 ---  
-The external behavior of this overloaded method is identical to the intersection method from the Set interface described above. However, since the parameter is typed as an LinkedSet, this method can directly access the doubly-linked list in this set as well as in the parameter set. Having access to the underlying representation of both sets allows a more efficient algorithm for this method. The time complexity of the intersection method must be O(N) where N is the size of the larger of the two sets involved.
+The external behavior of this overloaded method is identical to the intersection method from the Set interface described above. However, since the parameter is typed as a LinkedSet, this method can directly access the doubly-linked list in this set as well as in the parameter set. Having access to the underlying representation of both sets allows a more efficient algorithm for this method. The time complexity of the intersection method must be O(N) where N is the size of the larger of the two sets involved.
 
 complement(LinkedSet<T> s)
 ---  
-The external behavior of this overloaded method is identical to the complement method from the Set interface described above. However, since the parameter is typed as an LinkedSet, this method can directly access the doubly-linked list in this set as well as in the parameter set. Having access to the underlying representation of both sets allows a more efficient algorithm for this method. The time complexity of the complement method must be O(N) where N is the size of the larger of the two sets involved.
+The external behavior of this overloaded method is identical to the complement method from the Set interface described above. However, since the parameter is typed as a LinkedSet, this method can directly access the doubly-linked list in this set as well as in the parameter set. Having access to the underlying representation of both sets allows a more efficient algorithm for this method. The time complexity of the complement method must be O(N) where N is the size of the larger of the two sets involved.
 
 descendingIterator()
  --- 
