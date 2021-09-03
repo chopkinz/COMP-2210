@@ -1,6 +1,5 @@
    COMP-2210 Fundamentals of Computing II
-   
-    Description: Hands-On labs and Assigments architected for COMP-2210, the data structures and algorithms course at Auburn. Emphasis is placed on the interplay between effective     data structures and efficient algorithms.
+   Description: Hands-On labs and Assigments architected for COMP-2210, the data structures and algorithms course at Auburn. Emphasis is placed on the interplay between effective     data structures and efficient algorithms.
 
 ---
 
