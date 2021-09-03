@@ -2,7 +2,7 @@
 
 Hands-On labs and Assigments architected for COMP-2210, the data structures and algorithms course at Auburn. Emphasis is placed on the interplay between effective data structures and efficient algorithms.
 
----
+
 
     M1: Programming fundamentals, correctness, testing, debugging, generality, idioms, patterns
 
