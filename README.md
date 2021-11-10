@@ -4,7 +4,7 @@
 
 ---
 
-    M1: Programming fundamentals, correctness, testing, debugging, generality, idioms, patterns
+   M1: Programming fundamentals, correctness, testing, debugging, generality, idioms, patterns
 
 ---
 
