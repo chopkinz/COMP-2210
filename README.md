@@ -4,8 +4,8 @@
 
 ---
 
-      <p> M1: Programming fundamentals, correctness, testing, debugging, generality, idioms, patterns
-      </p>
+    M1: Programming fundamentals, correctness, testing, debugging, generality, idioms, patterns
+      
 ---
 
     M2: Efficiency, algorithm analysis, sorting, divide-and-conquer, recursion
